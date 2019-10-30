@@ -1,0 +1,17 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "board.js",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "prettier": "^1.18.2",
+    "sass": "^1.22.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

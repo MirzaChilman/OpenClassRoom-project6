@@ -1,0 +1,191 @@
+* {
+  font-family: "DejaVu Sans";
+}
+body {
+  background-color: #56494c;
+}
+header {
+  background-color: #847e89;
+  padding: 20px;
+}
+.gameOver-content > * {
+  color: #fff;
+}
+button {
+  border: 0 solid #afbfc0;
+  background-color: #afbfc0;
+  padding: 10px 15px;
+  border-radius: 2%;
+}
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.hide {
+  display: none;
+}
+.landing-page--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #9fa4a9;
+}
+.container {
+  width: 100%;
+  padding: 15px 25px;
+}
+.main-container {
+  display: flex;
+  justify-content: space-around;
+}
+ol li {
+  list-style-type: circle;
+}
+.weapons {
+  display: inline-flex;
+  background-color: #fff;
+}
+.board-container,
+.container-quiz,
+.player-container {
+  display: none;
+}
+.btn-attack,
+.btn-defend {
+  border-radius: 5%;
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.btn-attack {
+  background-color: #d86c6c;
+}
+.btn-defend {
+  background-color: #7eb789;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+button:hover {
+  border: none;
+  opacity: 0.5;
+}
+.gameOver-content {
+  padding: 200px;
+  opacity: 0.8;
+  margin: 0 auto;
+  text-align: center;
+}
+.turn-active {
+  background-color: salmon;
+  padding: 15px 0;
+  margin: 0 50px;
+}
+li {
+  list-style-type: none;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.player-container {
+  background-color: #fff;
+  text-align: center;
+  flex-direction: column;
+  min-height: 550px;
+  min-width: 250px;
+  margin-right: 50px;
+  margin-left: 50px;
+  border: solid 2px #000;
+  margin-top: 30px;
+}
+.player-container .player,
+.player-container .weapon {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.player-container .player-container {
+  margin: 0 auto;
+}
+.board-container {
+  min-width: 500px;
+  min-height: 500px;
+  max-width: 500px;
+  max-height: 500px;
+  background-size: cover;
+  border-radius: 5px;
+  margin-left: 15px;
+  margin-top: 60px;
+  position: relative;
+}
+.board-container .box {
+  border-radius: 4px;
+  border: solid 0.5px grey;
+  background-color: wheat;
+  min-width: 49.5px;
+  min-height: 49.5px;
+  float: left;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.board-container .obstacle {
+  background-image: url(image/block-box.jpeg);
+  background-size: 50px 50px;
+}
+.board-container .weapon.wp-2,
+.wp-2 {
+  background-image: url(image/wp-2.png);
+  background-size: 50px 50px;
+}
+.board-container .weapon.wp-3,
+.wp-3 {
+  background-image: url(image/wp-3.png);
+  background-size: 50px 50px;
+}
+.board-container .weapon.wp-4,
+.wp-4 {
+  background-image: url(image/wp-4.png);
+  background-size: 50px 50px;
+}
+.board-container .weapon.wp-5,
+.wp-5 {
+  background-image: url(image/wp-5.png);
+  background-size: 50px 50px;
+}
+.board-container .weapon.wp-1,
+.wp-1 {
+  background-image: url(image/wp-1.png);
+  background-size: 48px 48px;
+}
+.board-container .player1 {
+  background-image: url(image/player-1.jpg) !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.board-container .player2 {
+  background-image: url(image/player-2.jpg) !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.weapon-1 img,
+.weapon-2 img {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+.player {
+  font-size: 20px;
+  text-align: center;
+}
+.player-img > img {
+  max-width: 100%;
+  max-height: 150px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Turn Based Game</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar-brand">Turn Based Game</div>
+    </header>
+    <section class="landing-page">
+      <div class="landing-page--content">
+        <h1>Let's play</h1>
+        <button onclick="startGame(this)">Start game</button>
+      </div>
+    </section>
+    <div class="container">
+      <div class="player-container active" id="player-1">
+        <div class="player">
+          <h2 class="name-1"></h2>
+          <div class="player-img">
+            <img src="image/player-1.jpg" alt="pig" />
+          </div>
+        </div>
+        <div class="weapon">
+          <h2>Health Point: <span id="life-1"></span></h2>
+          <h3>Attack: <span class="damage-1"></span></h3>
+          <div class="weapon-1"></div>
+          <div class="turn-1"></div>
+          <div class="buttons">
+            <button class="btn-attack-1">Attack</button>
+            <button class="btn-defend-1">Defend</button>
+          </div>
+        </div>
+      </div>
+      <div class="board-container"></div>
+      <div class="player-container" id="player-2">
+        <div class="player">
+          <h2 class="name-2"></h2>
+          <div class="player-img">
+            <img src="image/player-2.jpg" alt="snake" />
+          </div>
+        </div>
+        <div class="weapon">
+          <h2>Health Point: <span id="life-2"></span></h2>
+          <h3>Attack: <span class="damage-2"></span></h3>
+          <div class="weapon-2"></div>
+          <div class="turn-2"></div>
+          <div class="buttons">
+            <button class="btn-attack-2">Attack</button>
+            <button class="btn-defend-2">Defend</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="gameOver-content">
+      <h1>Game Over</h1>
+      <h3>Play Again?</h3>
+      <button onclick="window.location.reload();">Yes</button>
+    </section>
+    <script src="jquery.js"></script>
+    <script src="board.js"></script>
+  </body>
+</html>
